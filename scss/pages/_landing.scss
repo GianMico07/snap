@@ -1,0 +1,320 @@
+header{
+    margin: 2em 2.5em;
+
+    .logo-nav-container{
+        gap: 3em;
+        align-content: center;
+    }
+
+    
+
+    nav{
+        position: relative;
+
+        ul{
+            gap: 2.5em;
+        }
+
+        li{
+            align-items: center;
+        }
+
+        a{
+            transition: .5s all ease;
+        }
+
+        a:hover{
+            color: black;
+            transition: .5s all ease;
+        }
+
+
+ 
+
+        .features-dropdown{
+            position: absolute;
+            left: -65px;
+            top: 40px;
+            border-radius: 10px;
+            padding: 1em 1.5em;
+            border: 1px;
+            background-color: white;
+            box-shadow: 0px 0px 60px rgba(128, 128, 128, 0.3);
+
+            li{
+                padding: .4em 0;
+                display: flex;
+                gap: .5em;
+
+                
+
+               a{
+                align-items: center;
+                justify-content: center;
+               }
+
+               i{
+                width: 22px;
+                text-align: center;
+               }
+            }
+
+     
+
+
+        }
+
+
+
+        .company-dropdown{
+            position: absolute;
+            left: 115px;
+            top: 40px;
+            border-radius: 10px;
+            padding: 1em 1.5em;
+            border: 1px;
+            background-color: white;
+            box-shadow: 0px 0px 60px rgba(128, 128, 128, 0.3);
+
+            li{
+                padding: .57em 0;
+                display: flex;
+                gap: .5em;
+            }
+        }
+    }
+
+    #company-dropdown{
+        display: none;
+    }
+
+    #features-dropdown,#arrow-up,#company-arrow-up,#company-dropdown{
+        display: none;
+    }
+
+    // .features:hover{
+    //     .features-dropdown,#arrow-up{
+    //         transition: all ease .5s;
+    //         opacity: 1;
+    //         visibility: visible;
+    //     }
+    // }
+
+    .login-register{
+        .btn-login,.btn-register{
+            padding: .7em 1em;
+            border-radius: 10px;
+            transition: .5s all ease;
+        }
+
+        .btn-register{
+            border: 1px solid $clr-black;
+            transition: .5s all ease;
+        }
+
+        .btn-login:hover,.btn-register:hover{
+            color: $clr-black;
+            transition: .5s all ease;
+        }
+    }
+}
+
+section{
+    padding: 2em 0;
+
+    .main{
+        .container{
+        }
+    }
+
+    .make-remote-work{
+    
+
+        .make-remote-work-container{
+            padding: 7em 0;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 3rem;
+
+            .btn-learnmore{
+                display: inline-block;
+                padding: 1.5em 2em;
+                border-radius: 10px;
+                border: 2px solid black;
+                background-color: $clr-black;
+                color: $clr-primary;
+                font-weight: 800;
+                transition: .3s all ease;
+            }
+
+            .btn-learnmore:hover{
+                background-color: white;
+                color: $clr-black;
+                transition: .3s all ease;
+            }
+
+            p{
+                padding: 3em 0;
+            }
+
+            
+        }
+    }
+
+    .hero-image{
+        img{
+            width: 500px;
+        }
+    }
+
+    .client-container{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .main{
+        padding: 1em 0;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile-navigation{
+        display: block;
+    }
+
+
+    .mobile-menu-icon{
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .btn-close{
+        img{
+            width: 37px;
+        }
+
+        padding: 2.2em 3em;
+        text-align: right;
+    }
+
+    .mobile-navigation{
+        background-color: $clr-black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        transition: .4s all ease;
+
+        .mobile-nav-menu{
+            position: relative;
+
+            ul li{
+                padding: 1.5em 2em;
+                text-align: center;
+                transition: .2s all ease;
+                cursor: pointer;
+            }
+
+            li:hover{
+                background-color: #E2CD2F;
+                transition: .2s all ease;
+                
+                a{
+                    color: black;
+                }
+            }
+
+            ul li a{
+                color: white;
+            }
+
+            .mobile-features-dropdown,.mobile-company-dropdown{
+                position: sticky;
+                width: 100%;
+                height: 0px;
+                background-color: darkorange;
+                overflow: hidden;
+                transition: .5s all ease;
+            }
+        }
+
+        #mobile-features-up,#mobile-company-up{
+            display: none;
+        }
+    }
+
+    .logo-nav-container{
+        display: block;
+    }
+
+    .login-register{
+        display: none;
+    }
+    
+
+    .container{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    section .hero-image img{
+       width: 100%;
+
+    }
+
+    .make-remote-work-container{
+        text-align: center;
+
+        h1{
+            .break{
+                display: none;
+            }
+        }
+    }
+
+    section .client-container{
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    section .client-container img{
+        width: 100%;
+    }
+   
+}
+
+@media only screen and (max-width: 520px){
+    .make-remote-work-container{
+        h1{
+            font-size: 49px;
+        }
+
+        p{
+            .break{
+                display: none;
+            }
+        }
+    }
+
+    section .make-remote-work .make-remote-work-container{
+        padding: 5em 0;
+    }
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $clr-gray;
+    // overflow-x: hidden;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30%;
+
+}
+
+body{
+    font-family: $ff-primary;
+    // overflow-x: hidden;
+}
+
+h1{
+    font-size: 72px;
+    color: $clr-black;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+ul li a {
+    text-decoration: none;
+  }
+
+p{
+    line-height: 1.5em;
+}
+
