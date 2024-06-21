@@ -260,6 +260,24 @@ section{
         #mobile-features-up,#mobile-company-up{
             display: none;
         }
+
+        .mobile-login-register{
+            
+
+            .btn-login,.btn-register{
+                color: white;
+                padding: 1.6em 2em;
+                display: block;
+                text-align: center;
+                transition: 0.2s all ease;
+            }
+
+            a:hover{
+                background-color: #E2CD2F;
+                color: black;
+                transition: 0.2s all ease;
+            }
+        }
     }
 
     .logo-nav-container{

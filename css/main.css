@@ -510,6 +510,18 @@ section .client-container {
   .mobile-navigation #mobile-features-up, .mobile-navigation #mobile-company-up {
     display: none;
   }
+  .mobile-navigation .mobile-login-register .btn-login, .mobile-navigation .mobile-login-register .btn-register {
+    color: white;
+    padding: 1.6em 2em;
+    display: block;
+    text-align: center;
+    transition: 0.2s all ease;
+  }
+  .mobile-navigation .mobile-login-register a:hover {
+    background-color: #E2CD2F;
+    color: black;
+    transition: 0.2s all ease;
+  }
   .logo-nav-container {
     display: block;
   }
